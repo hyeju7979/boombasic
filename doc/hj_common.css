@@ -1,4 +1,4 @@
-.test {
-    border: 1px solid #789;
-    background-color: #890985;
+header .hj_gnb {
+    float:right;
+    border:1px solid red;
 }
