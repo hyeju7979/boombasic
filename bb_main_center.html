@@ -1,30 +1,35 @@
 <!--@layout(/layout/basic/main.html)-->
 
-<!-- 동영상 -->
-<div class="hj_main_video">
-    <video width="100%" height="auto" autoplay>
+
+<!--div class="hj_main_video">
+    <video width="100%" height="auto" autoplay loop>
         <source src="http://magjay.co.kr/web/store/main_video.mp4" type="video/mp4">
     </video>
 </div>
 
-<!-- 카테고리 배너 -->
+
 <main class="hj_main_categorybanner">
     <div class="hj_category_clothes">
-        <h2>
-            CLOTHES
-            <span>FW18 collection</span>
-        </h2>
+        <h2><a href="#">CLOTHES<span>FW18 collection</span></a></h2>
         <img src="/web/season2_skin/boombasic_type1/img/main/clothes.jpg" alt="CLOTHES" />
     </div>
-    <div>
-        HOME-DECO
+    <div class="hj_category_homedeco">
+        <h2><a href="#">HOME-DECO<span>FW18 collection</span></a></h2>
+        <img src="/web/season2_skin/boombasic_type1/img/main/homedeco.jpg" alt="HOME DECO" />
     </div>
-    <div>
-        <span>ACCESSORIES</span>
-        <span>DOGS</span>
+    <div class="hj_category_accdog">
+        <span class="hj_category_acc">
+            <h2><a href="#">ACCESSORIES</a></h2>
+        	<img src="/web/season2_skin/boombasic_type1/img/main/acc2.jpg" alt="ACCESSORIES" />
+        </span>
+        <span class="hj_category_dog">
+            <h2><a href="#">DOGS</a></h2>
+        	<img src="/web/season2_skin/boombasic_type1/img/main/dog.jpg" alt="DOGS" />
+        </span>
     </div>
-    <div>
-        AROMA-DETERGENT
+    <div class="hj_category_aroma">
+        <h2><a href="#">AROMA-DETERGENT<span>FW18 collection</span></a></h2>
+        <img src="/web/season2_skin/boombasic_type1/img/main/aroma.jpg" alt="AROMA-DETERGENT" />
     </div>
     <div>
         DIFFUSER
@@ -37,6 +42,35 @@
         <span>GIFT</span>
         <span>SET</span>
     </div>
-</main>
+</main-->
 
+<div id="fullpage">
+    <div class="section " id="section0">
+        <video id="myVideo" loop muted data-autoplay>
+            <source src="http://magjay.co.kr/web/store/main_video.mp4" type="video/mp4">
+        </video>
+        <div class="layer">
+            <h1>BoomBasic F/W Collection Videos</h1>
+        </div>
+    </div>
+    <div class="section" id="section1">
+        <div class="slide" id="slide1"><h1>BoomBasic CLOTHES F/W 18 collection Section 1</h1></div>
+        <div class="slide" id="slide2"><h1 style="color:#000">BoomBasic AROMA F/W 18 collection Section 2</h1></div>
+    </div>
+    <div class="section" id="section2">
+       <h1>BoomBasic HOME-DECO F/W 18 collection Section 3</h1>
+    </div>
+     <div class="section" id="section3">
+       <h1 style="color:#fff">BoomBasic DOG F/W 18 collection Section 4</h1>
+    </div>
+    <div class="section" id="section4">
+        <h1>BoomBasic F/W Section 5</h1>
+    </div>
+</div>
+<script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            verticalCentered: true,
+            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE']
+        });
+    </script>
 <!--@define(cmc_log)-->

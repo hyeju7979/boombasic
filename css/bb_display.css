@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Noto+Sans:400,700');
+
+/* COMMON */
+body,code,a {
+	font:0.875em 'Noto Sans','Lato',Verdana,Dotum,AppleGothic,sans-serif;
+}
+a {
+    transition-timing-function: cubic-bezier(.165,.84,.44,1);
+    transition-duration: 240ms;
+    transition-property: color,border,opacity,background;
+}
+a, a:hover, a:link, a:visited {
+    text-decoration: none;
+}
+h1 {
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
+
+/* LAYOUT */
+#wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+#header {
+    background: none;
+}
+#header .inner {
+    position: fixed;
+    z-index: 1000;
+    width:100%;
+}
+#container {
+    width: 100%;
+}
+#contents {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    padding:0 46px;
+}
+header .hj_gnb {
+    float: right;
+    margin-top: 22px;
+}
+header .hj_gnb li {
+    float: left;
+    margin-left: 20px;
+}
+header .hj_gnb li a {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+header h1 {
+    clear: both;
+    color: #fff;
+}
+header h1 img {
+    width: 250px;
+}
+.hj_main_nav {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 0 20px 14px 0;
+    border-bottom: 1px solid #fff;
+    transition: border 240ms cubic-bezier(.165,.84,.44,1);
+}
+.hj_main_nav li {
+    float: left;
+    margin-right: 30px;
+}
+.hj_main_nav li a {
+    position: relative;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+header .hj_gnb li a:hover,
+.hj_main_nav li a:hover {
+    color: #f18282;
+}
+.hj_copyright {
+    margin-top: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/*
+	MAIN
+*/
+/* 비디오 */
+.hj_main_video {}
+.hj_main_video img {
+    width:100%;
+}
+/* 카테고리 배너 */
+.hj_main_categorybanner {}
+.hj_main_categorybanner img {
+	max-width:100%;
+}
+.hj_main_categorybanner div {
+    position: relative;
+
+}
+.hj_category_dog h2,
+.hj_category_acc h2,
+.hj_category_clothes h2 {
+	position: absolute;
+    top: 15px;
+    left: 46px;
+}
+.hj_category_homedeco h2 {
+    position: absolute;
+    left: unset;
+    right: 46px;
+    top: 50%;
+}
+.hj_category_accdog {
+    height:634px;
+}
+.hj_category_accdog span {
+    float:left;
+    width:50%
+}
+.hj_category_dog {
+	position: relative;
+}
+.hj_category_dog a {
+    color:#fff;
+}
+
+/* FOOTER */
+#hj_footer {
+    position: relative;
+}
+.hj_offlineshop {
+    width:100%;
+    height:300px;
+    background:pink;
+}
+.hj_footer_gnb {
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    right: 46px;
+    box-sizing: border-box;
+    height: 40px;
+    text-align: right;
+    /*transition: border 240ms cubic-bezier(.165,.84,.44,1);*/
+}
+.hj_footer_gnb li {
+    float: left;
+        margin-left: 20px;
+        line-height: 20px;
+        font-family: hysteric_glamour;
+    font-size: 1.2rem
+}
+
+.hj_footer_gnb li a, .hj_footer_gnb li a:link, .hj_footer_gnb li a:visited {
+    color: #fff;
+    border-bottom: 0 none;
+}
+.hj_footer_gnb li a {
+    transition-timing-function: cubic-bezier(.165,.84,.44,1);
+    transition-duration: 240ms;
+    transition-property: color,border,opacity,background;
+}
+.hj_footer_gnb li a:active, .hj_footer_gnb li a:focus, .hj_footer_gnb li a:hover {
+    color: #f18282!important;
+}
+
+
+/*테스트*/
+/* Centered texts in each section
+        * --------------------------------------- */
+        .section{
+            text-align:center;
+            overflow: hidden;
+        }
+
+        #myVideo{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top:0;
+            right:0;
+            width: 100%;
+            height: 100%;
+            background-size: 100% 100%;
+            background-color: black; /* in case the video doesn't fit the whole page*/
+            background-image: /* our video */;
+            background-position: center center;
+            background-size: contain;
+            object-fit: cover; /*cover video background */
+            z-index:3;
+        }
+
+
+
+        /* Layer with position absolute in order to have it over the video
+        * --------------------------------------- */
+        #section0 .layer{
+            position: absolute;
+            z-index: 4;
+            width: 100%;
+            left: 0;
+            top: 43%;
+
+            /*
+            * Preventing flicker on some browsers
+            * See http://stackoverflow.com/a/36671466/1081396  or issue #183
+            */
+            -webkit-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+
+        /*solves problem with overflowing video in Mac with Chrome */
+        #section0{
+            overflow: hidden;
+        }
+
+	#section0{
+		background-image: url(imgs/bg1.jpg);
+	}
+	#section0 h1{
+		top: 50%;
+		transform: translateY(-50%);
+		position: relative;
+	}
+	#section2{
+		background-image: url(/web/season2_skin/boombasic_type1/img/main/homedeco.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3{
+		background-image: url(/web/season2_skin/boombasic_type1/img/main/dog.jpg);
+		padding: 6% 0 0 0;
+	}
+
+	#section4{
+		background-image: url(/web/season2_skin/boombasic_type1/img/main/acc2.jpg);
+		padding: 6% 0 0 0;
+	}
+
+/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background-image: url(/web/season2_skin/boombasic_type1/img/main/clothes.jpg);
+		padding: 6% 0 0 0;
+	}
+	#slide2{
+		background-image: url(/web/season2_skin/boombasic_type1/img/main/aroma.jpg);
+		padding: 6% 0 0 0;
+	}
+
+.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
