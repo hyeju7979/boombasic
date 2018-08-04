@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Noto+Sans:400,700');
 
+/* COMMON */
 body,code {
     font-family: 'Noto Sans','Lato', sans-serif;
 }
@@ -11,17 +12,30 @@ a {
 a, a:hover, a:link, a:visited {
     text-decoration: none;
 }
-/* HEADER */
-#hj_header {
-    position: relative;
-    background: aliceblue;
+
+/* LAYOUT */
+#wrap {
+    width: 100%;
+    margin: 0 auto;
 }
-.hj_inner {
+#header {
+    background: none;
+}
+#header .inner {
     position: fixed;
     z-index: 1000;
     width:100%;
-    background: antiquewhite;
 }
+#container {
+    width: 100%;
+}
+#contents {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* HEADER */
 header {
     padding:0 46px;
 }
@@ -69,14 +83,18 @@ header .hj_gnb li a:hover,
 .hj_copyright {
     margin-top: 20px;
     color: #fff;
+    text-transform: uppercase;
 }
 
-/* WRAP */
-#hj_wrap {
-    position: relative;
-}
+/* MAIN */
 .hj_main_video {}
+.hj_main_video img {
+    width:100%;
+}
 .hj_main_categorybanner {}
+.hj_main_categorybanner img {
+    max-width:100%;
+}
 
 /* FOOTER */
 #hj_footer {
@@ -99,9 +117,9 @@ header .hj_gnb li a:hover,
 }
 .hj_footer_gnb li {
     float: left;
-    margin-left: 20px;
-    line-height: 20px;
-    font-family: hysteric_glamour;
+        margin-left: 20px;
+        line-height: 20px;
+        font-family: hysteric_glamour;
     font-size: 1.2rem
 }
 
