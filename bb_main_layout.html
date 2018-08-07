@@ -32,7 +32,7 @@
 
     <!-- hj -->
     <!--@css(/layout/basic/css/hj_display.css)-->
-      <!--@js(/layout/basic/js/hj_display.js)-->
+     <!--@js(/layout/basic/js/hj_display.js)-->
 
     <link rel="stylesheet" href="/web/season2_skin/boombasic_type1/css/icomoon_demo.css">
     <link rel="stylesheet" href="/web/season2_skin/boombasic_type1/css/icomoon_style.css">
@@ -44,14 +44,14 @@
     <script type="text/javascript" src="/web/season2_skin/boombasic_type1/js/fullpage.js"></script>
     <!-- hj -->
 </head>
-<body id="sub">
+<body id="main">
 <div id="skipNavigation">
     <p><a href="#category">전체상품목록 바로가기</a></p>
     <p><a href="#contents">본문 바로가기</a></p>
 </div>
 
 <div id="header">
-    <!--@import(/layout/basic/sub_header.html)-->
+    <!--@import(/layout/basic/main_header.html)-->
 </div>
 <hr class="layout" />
 
@@ -67,7 +67,32 @@
 <hr class="layout" />
 
 <div id="footer">
-    <!--@import(/layout/basic/footer.html)-->
+    <div class="inner">
+        <span module="Layout_LogoBottom">
+            <!--@css(/css/module/layout/logobottom.css)-->
+            <a href="/index.html">{$mall_name}</a>
+        </span>
+
+        <div module="Layout_footer">
+            <!--@css(/css/module/layout/footer.css)-->
+            <ul class="utilMenu">
+                <li class="home"><a href="/index.html">홈</a></li>
+                <li><a href="/shopinfo/company.html">회사소개</a></li>
+                <li><a href="/member/agreement.html">이용약관</a></li>
+                <li><a href="/member/privacy.html"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="/shopinfo/guide.html">이용안내</a></li>
+            </ul>
+            <p class="address">
+                <span>법인명(상호) : {$company_name} </span> <span>대표자(성명) : {$president_name}</span> <span>사업자 등록번호 안내 : [{$company_regno}]</span> <span>통신판매업 신고 {$network_regno}</span> <span>{$biz_no_link}</span> <br />
+                <span>전화 : {$phone}</span> <span>팩스 : {$fax}</span> <span>주소 : {$mall_zipcode} {$mall_addr1} {$mall_addr2}</span><br />
+                <span>개인정보보호책임자 : <a href="mailto:{$cpo_email}">{$cpo_name}({$cpo_email})</a></span><br />
+                <span>Contact <strong><a href="mailto:{$email}">{$email}</a></strong> for more information.</span>
+            </p>
+            <p class="copyright">Copyright &copy; 2011 <strong>{$mall_name}</strong>. All rights reserved.</p>
+            <p class="pageTop"><a href="#header" title="화면 최상단으로 이동하기"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/btn_top2.gif" alt="맨위로" /></a></p>
+            <p class="hosting"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/logo_cafe24.png" alt="hosting by cafe24 카페24(주)" /></p>
+        </div>
+    </div>
 </div>
 
 <!-- 참고: 결제를 위한 필수 영역 -->
