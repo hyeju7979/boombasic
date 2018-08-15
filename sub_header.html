@@ -1,0 +1,82 @@
+<!--
+	메인 메뉴 하드 코딩
+  -->
+
+<div class="inner">
+    <div module="Layout_multishopList" class="list">
+        <!--@css(/css/module/layout/multishopList.css)-->
+        <button type="button" class="toggle"><span><img src="//img.cafe24.com/img/common/global/{$current_language_code}_18x12.png" alt="" /> {$current_language}</span></button>
+        <ul module="Layout_multishopListitem">
+            <li class="{$selected_class}">
+                <a href="//{$shop_domain}/">
+                    <img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" />
+                    <span class="name">{$locale_language}</span>
+                    <span class="unit">{$currency_code}</span>
+                </a>
+            </li>
+            <li class="{$selected_class}">
+                <a href="//{$shop_domain}/">
+                    <img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" />
+                    <span class="name">{$locale_language}</span>
+                    <span class="unit">{$currency_code}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div module="Layout_multishopList" class="thumb">
+        <!--@css(/css/module/layout/multishopList.css)-->
+        <ul module="Layout_multishopListitem">
+            <li>
+                <a href="//{$shop_domain}/">
+                    <img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="//{$shop_domain}/">
+                    <img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" />
+                </a>
+            </li>
+        </ul>
+        <div module="Layout_multishopListmultioption" class="multiOption">
+            <a href="#none">
+                <span module="Layout_multishopListmultioptionCountry" class="ship">
+                    <strong>Ship to</strong><span> : </span>
+                </span>
+                <span module="Layout_multishopListmultioptionLanguage" class="language">
+                    <strong>Language</strong><span> : <img src="//img.cafe24.com/img/common/global/{$language_code}_32x24.png" alt="" />{$language_name}</span>
+                </span>
+            </a>
+        </div>
+    </div>
+
+	<!-- 로고 -->
+	<h1><a href="/"><img src="/web/season2_skin/boombasic_type1/img/logo/sub_logo.png" alt="BOOM BASIC" /></a></h1>
+
+	<!-- 메인 메뉴 -->
+	<nav class="hj_main_nav">
+		<ul>
+			<li><a href="/product/list.html?cate_no=24">clothes</a></li>
+			<li><a href="/product/list.html?cate_no=25">air</a></li>
+			<li><a href="/product/list.html?cate_no=26">home-deco</a></li>
+		</ul>
+	</nav>
+
+
+    <div module="Layout_statelogoff" class="hj_gnb">
+        <!--@css(/css/module/layout/statelogoff.css)-->
+        <a href="/member/login.html">Sign in</a>
+        <a href="/order/basket.html"><svg class="icon icon-local_mall"><use xlink:href="symbol-defs.svg#icon-local_mall"></use></svg> bag</a>
+        <a href="/myshop/index.html">my page</a>
+		<a href="#">home</a>
+    </div>
+
+    <div module="Layout_stateLogon">
+        <!--@css(/css/module/layout/statelogon.css)-->
+        <a href="{$action_logout}">Sign out</a>
+        <a href="/order/basket.html"><svg class="icon icon-local_mall"><use xlink:href="symbol-defs.svg#icon-local_mall"></use></svg> bag</a>
+        <a href="/myshop/index.html">my page</a>
+		<a href="#">home</a>
+    </div>
+</div>
+<hr class="layout" />

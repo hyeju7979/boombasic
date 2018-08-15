@@ -1,0 +1,50 @@
+/*
+	FOOTER
+*/
+#main #footer a {
+    color:#353535;
+}
+#footer {
+    background: none;
+    position: relative;
+}
+#footer .inner {
+    position: unset;
+    margin: 0 auto;
+    width: 100%;
+}
+.xans-layout-footer {
+    position: relative;
+    padding-left: 20px;
+    height:52px;
+    line-height:52px;
+    background: #f8f8f8;
+}
+.xans-layout-footer .utilMenu,
+.xans-layout-footer .copyright {
+    float:left;
+	font-size: 0.875px;
+}
+.xans-layout-footer .address li,
+.xans-layout-footer .utilMenu li {
+    float:left;
+    margin-left: 20px;
+    font-size: 12px;
+}
+.xans-layout-footer .address {
+    float:right;
+}
+.hj_ft_contact_view {
+    position: absolute;
+    right:48px;
+    bottom: 52px;
+    z-index: 9999;
+    padding: 25px;
+    line-height: 2.2;
+    border: 1px solid red;
+    background: #fff;
+    display:none;
+}
+.hj_ft_contact {
+	cursor: pointer;
+}

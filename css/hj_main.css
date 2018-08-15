@@ -1,0 +1,175 @@
+/*
+	MAIN
+*/
+/* 비디오 */
+.hj_main_video img {
+    width:100%;
+}
+#fullpage img {
+    max-width:100%;
+}
+#fullpage a {
+    color:#353535;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    font-weight: bold;
+}
+#fullpage h1 a {
+    font-size: 2em;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+#fullpage .section{
+    text-align:center;
+    overflow: hidden;
+}
+#myVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black; /* in case the video doesn't fit the whole page*/
+    background-image: /* our video */;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover; /*cover video background */
+    z-index:3;
+}
+
+/* Layer with position absolute in order to have it over the video
+* --------------------------------------- */
+#section0 .layer{
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    top: 43%;
+
+    /*
+    * Preventing flicker on some browsers
+    * See http://stackoverflow.com/a/36671466/1081396  or issue #183
+    */
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+/*solves problem with overflowing video in Mac with Chrome */
+#section0{
+    overflow: hidden;
+}
+#section0{
+	background-image: url(imgs/bg1.jpg);
+}
+#section0 h1{
+	top: 50%;
+	transform: translateY(-50%);
+	position: relative;
+}
+#section2{
+	background-image: url(/web/season2_skin/boombasic_type1/img/main/air.jpg);
+	padding: 6% 0 0 0;
+}
+#section3{
+	background-image: url(/web/season2_skin/boombasic_type1/img/main/homedeco.jpg);
+	padding: 6% 0 0 0;
+}
+
+#section4{
+	background-image: url(/web/season2_skin/boombasic_type1/img/main/acc2.jpg);
+	/*padding: 6% 0 0 0;*/
+}
+
+/*Adding background for the slides
+* --------------------------------------- */
+#slide1{
+	background-image: url(/web/season2_skin/boombasic_type1/img/main/clothes.jpg);
+	padding: 6% 0 0 0;
+}
+#slide2{
+	background-image: url(/web/season2_skin/boombasic_type1/img/main/clothes_02.jpg);
+	padding: 6% 0 0 0;
+}
+#slide3{
+	background-image: url(/web/season2_skin/boombasic_type1/img/main/clothes_03.jpg);
+	padding: 6% 0 0 0;
+}
+#slide4{
+	background-image: url(/web/season2_skin/boombasic_type1/img/main/offlinestore/store_01.jpg);
+	padding: 6% 0 0 0;
+}
+#slide5{
+	background-image: url(/web/season2_skin/boombasic_type1/img/main/offlinestore/store_02.jpg);
+	padding: 6% 0 0 0;
+}
+#slide6{
+	background-image: url(/web/season2_skin/boombasic_type1/img/main/offlinestore/store_03.jpg);
+	padding: 6% 0 0 0;
+}
+.section{
+	background-size: cover;
+}
+.slide{
+	background-size: cover;
+}
+.fp-controlArrow.fp-prev {
+    border-width: 8px 8px 8px 0;
+	display: none;
+}
+.fp-controlArrow.fp-next {
+    border-width: 8px 0 8px 8px;
+    display: none;
+}
+/* 메인 카테고리 배너 : 홈데코 */
+#fullpage .section {
+	position: relative;
+}
+#fullpage a {
+    color:rgba(255,255,255,.8)
+}
+#fullpage .section#section3 h1 a:hover,
+#fullpage .section#section2 h1 a:hover,
+#fullpage .section#section1 h1 a:hover {
+	color:rgba(255,255,255,1)
+}
+#fullpage .section#section3 h1,
+#fullpage .section#section3,
+#fullpage .section#section2 h1,
+#fullpage .section#section2,
+#fullpage .section#section1 h1,
+#fullpage .section#section3 li,
+#fullpage .section#section2 li,
+#fullpage .section#section1 .hj_clothes_category {
+    margin-right: 70px;
+	font-size: 17px;
+    font-weight: normal;
+	line-height: 1.2;
+    text-align: right;
+}
+#fullpage li a:hover {
+	text-decoration: line-through;
+}
+#fullpage .section#section1 h1,
+#fullpage .section#section1 .hj_clothes_category {
+	position: relative;
+    bottom: 35%;
+}
+#fullpage .section#section2 h1,
+#fullpage .section#section2 ul {
+	position: relative;
+    bottom: 13%;
+}
+#fullpage .section#section3 h1 {
+    position: absolute;
+    right: 0;
+    bottom: 59%;
+}
+#fullpage .section#section3 ul {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+}

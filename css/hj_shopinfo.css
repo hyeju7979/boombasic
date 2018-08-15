@@ -1,0 +1,49 @@
+/*
+	SHOP INFO
+*/
+/* 오프라인 매장 */
+.hj_shopinfo_store {
+	text-align: center;
+}
+.hj_shopinfo_store img {
+    margin-bottom:100px;
+}
+
+
+/* 회사소개 */
+.hj_shopinfo_company {
+	margin: 0 auto;
+	/* padding-top: 263px; */
+    width: 1000px;
+}
+.hj_shopinfo_company section {
+	padding:30px;
+}
+.hj_shopinfo_company .hj_company_contents {}
+.hj_shopinfo_company .hj_company_contents .hj_step1 {
+	margin-bottom: 100px;
+}
+.hj_shopinfo_company .hj_company_contents .hj_step1 h2 {
+	margin-bottom: 40px;
+}
+.hj_shopinfo_company .hj_company_contents .hj_step1 section {
+    text-align: center;
+	border: 1px solid #000;
+}
+.hj_shopinfo_company .hj_company_contents h2 {
+	text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.hj_shopinfo_company .hj_company_contents h3 {
+	margin: 40px auto;
+	color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+	text-align: center;
+}
+.hj_shopinfo_company .hj_company_contents li {
+	margin-bottom: 70px;
+    line-height: 1.7;
+}

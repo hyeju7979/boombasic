@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Noto+Sans:400,700');
+
+/* COMMON */
+body {
+	min-width:960px;
+}
+body,code,a {
+	font:0.875em 'Noto Sans','Lato',Verdana,Dotum,AppleGothic,sans-serif;
+}
+input,select,textarea,button {
+    outline: none;
+}
+a {
+    transition-timing-function: cubic-bezier(.165,.84,.44,1);
+    transition-duration: 240ms;
+    transition-property: color,border,opacity,background;
+}
+a, a:hover, a:link, a:visited {
+    text-decoration: none;
+}
+h1 {
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
+/* Thema */
+
+.xans-product-normalmenu ul#type li a:hover,
+header .hj_gnb li a:hover,
+.hj_main_nav li a:hover {
+    color: #ceab8b;
+}
+
+/* LAYOUT */
+#company_layout #wrap,
+#sub #wrap,
+#main #wrap {
+    width: 100%;
+	margin: 0 auto;
+}
+#wrap {
+    width: 100%;
+    margin: 100px auto 0;
+}
+#company_layout {
+	background: #e0c7a8;
+}
+#header {
+    background: none;
+}
+#header .inner {
+    position: fixed;
+    z-index: 1000;
+    width:100%;
+}
+#sub #container,
+#main #container {
+    margin: 0 auto;
+    width: 100%;
+}
+#container {
+    margin: 0 46px;
+    width: unset;
+}
+#contents {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+}
+#sub #contents {
+	padding-top: 12px;
+}
+#footer .inner {
+    width: 100%;
+}
