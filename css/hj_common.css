@@ -21,14 +21,49 @@ a, a:hover, a:link, a:visited {
 h1 {
     font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
 }
-/* Thema */
 
+/*
+	Thema
+*/
+/* 서브컬러1 : 베이지 */
+#sub.hj_detail_layout #header .inner .xans-layout-statelogon > a:hover,
+#sub.hj_detail_layout #header .inner .xans-layout-statelogoff > a:hover,
+.xans-product-normalmenu .prdCount,
+.xans-layout-statelogon > a:hover,
+.xans-layout-statelogoff > a:hover,
+#sub .hj_main_nav li a,
+#sub .xans-layout-category .sub-category > ul > li a,
+#sub .xans-layout-category .position > ul > li > a,
+.hj_common_header header .hj_gnb li a:hover,
+.hj_common_header .hj_main_nav li a:hover,
 .xans-product-normalmenu ul#type li a:hover,
 header .hj_gnb li a:hover,
 .hj_main_nav li a:hover {
     color: #ceab8b;
 }
+/* 메인컬러 : 브라운 */
+.xans-product-relation .relation ul.prdList li.item .box strong,
+.xans-product-relation .relation ul.prdList li.item .box a,
+.xans-product-relation .relation ul.prdList li.item .box,
+.xans-product-relation .relation ul.prdList li.item
+.infoArea  #totalProducts .right,
+.totalPrice .total {
+    color: #2f1d13;
+}
+/* 버튼 컬러  */
+#sub.hj_detail_layout #header .inner,
+.xans-product-relation .relation h3,
+.ec-base-button a {
+	background: #2f1d13;
+}
 
+/* 팝업창 */
+.ec-base-layer .header {
+    background: #333 !important;
+}
+.ec-base-layer {
+    border-color:#333 !important;
+}
 /* LAYOUT */
 #company_layout #wrap,
 #sub #wrap,
@@ -70,4 +105,8 @@ header .hj_gnb li a:hover,
 }
 #footer .inner {
     width: 100%;
+}
+
+.hj_none {
+    display:none;
 }

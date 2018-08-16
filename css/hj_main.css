@@ -9,7 +9,7 @@
     max-width:100%;
 }
 #fullpage a {
-    color:#353535;
+    color:#333;
     font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
     font-weight: bold;
 }
@@ -71,11 +71,11 @@
 	position: relative;
 }
 #section2{
-	background-image: url(/web/season2_skin/boombasic_type1/img/main/air.jpg);
+	background-image: url('/web/season2_skin/boombasic_type1/img/main/categorybanner/air.jpg');
 	padding: 6% 0 0 0;
 }
 #section3{
-	background-image: url(/web/season2_skin/boombasic_type1/img/main/homedeco.jpg);
+	background-image: url('/web/season2_skin/boombasic_type1/img/main/categorybanner/homedeco.jpg');
 	padding: 6% 0 0 0;
 }
 
@@ -87,27 +87,27 @@
 /*Adding background for the slides
 * --------------------------------------- */
 #slide1{
-	background-image: url(/web/season2_skin/boombasic_type1/img/main/clothes.jpg);
+	background-image: url('/web/season2_skin/boombasic_type1/img/main/categorybanner/06-2.jpg');
 	padding: 6% 0 0 0;
 }
 #slide2{
-	background-image: url(/web/season2_skin/boombasic_type1/img/main/clothes_02.jpg);
+	background-image: url('/web/season2_skin/boombasic_type1/img/main/categorybanner/clothes_02.jpg');
 	padding: 6% 0 0 0;
 }
 #slide3{
-	background-image: url(/web/season2_skin/boombasic_type1/img/main/clothes_03.jpg);
+	background-image: url('/web/season2_skin/boombasic_type1/img/main/categorybanner/clothes_03.jpg');
 	padding: 6% 0 0 0;
 }
 #slide4{
-	background-image: url(/web/season2_skin/boombasic_type1/img/main/offlinestore/store_01.jpg);
+	background-image: url('/web/season2_skin/boombasic_type1/img/main/offlinestore/store_01.jpg');
 	padding: 6% 0 0 0;
 }
 #slide5{
-	background-image: url(/web/season2_skin/boombasic_type1/img/main/offlinestore/store_02.jpg);
+	background-image: url('/web/season2_skin/boombasic_type1/img/main/offlinestore/store_02.jpg');
 	padding: 6% 0 0 0;
 }
 #slide6{
-	background-image: url(/web/season2_skin/boombasic_type1/img/main/offlinestore/store_03.jpg);
+	background-image: url('/web/season2_skin/boombasic_type1/img/main/offlinestore/store_03.jpg');
 	padding: 6% 0 0 0;
 }
 .section{
@@ -144,11 +144,19 @@
 #fullpage .section#section3 li,
 #fullpage .section#section2 li,
 #fullpage .section#section1 .hj_clothes_category {
-    margin-right: 70px;
+    margin-right: 180px;
 	font-size: 17px;
     font-weight: normal;
 	line-height: 1.2;
     text-align: right;
+}
+#fullpage .section#section1 .hj_clothes_category a:hover,
+#fullpage .section#section1 h1 a {
+	color:rgba(47,29,19,1)
+}
+#fullpage .section#section1 .hj_clothes_category a,
+#fullpage .section#section1 h1 a:hover {
+	color:rgba(128,97,69,1)
 }
 #fullpage li a:hover {
 	text-decoration: line-through;
